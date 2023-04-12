@@ -872,19 +872,19 @@ transform: translateY(0);
 
 .checkbox-input{
     position: absolute;
-    -webkit-appearance: none;
+    opacity: 0;
+/*     -webkit-appearance: none;
     -moz-appearance: none;
-
-    appearance: none;
+    appearance: none; */
 }
 
 .check-box {
+    position: absolute;
     display: block;
     align-items: center;
     
     height: 16px;
     width: 16px;
-    position: absolute;
 
     border: 1px solid #8E8F99;
     border-radius: 2px;
@@ -894,8 +894,8 @@ transform: translateY(0);
 
 .checkbox-input:checked+ .check-box {
     background-color: var(--accent-color);
-    background-image: url("../images/click.svg");
     border: transparent;
+    fill: #f4f4fd;
 }
 
 .policy-first-part {
