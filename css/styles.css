@@ -715,8 +715,8 @@ transform: translateY(0);
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--transition-dur-time);
 
-    min-height: 576px;
-    min-width: 408px;
+    height: 584px;
+    width: 408px;
     border-radius: 4px;
     padding: 24px;
 
@@ -751,3 +751,284 @@ transform: translateY(0);
     fill: var(--pimary-white-color);
     background-color: var(--accent-color);
 }
+
+/* <.........Name, Phone, Email........> */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    transition: fill var(--transition-dur-time);
+}
+
+.form-field input {
+    width: 100%;
+    padding: 8px 40px;
+    margin-bottom: 8px ;
+    height: 40px;
+    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: inherit;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border var(--transition-dur-time);
+}
+
+.form-field .label {
+    margin-bottom: 4px;   
+}
+
+.form-name {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.label {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    color:var(--customer-link-color);
+}
+
+.form-input {
+    font-size: 12px;
+    line-height: 1.67;
+    outline: transparent;
+    letter-spacing: 0.01em; 
+    color:var(--customer-link-color);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.form-item {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+
+    transform: translateY(-70%);
+    fill: var(--title-text-color);
+    transition: fill var(--transition-dur-time);
+}
+
+.form-input:focus ~ .form-item {
+    fill: var(--secondary-accent-color);
+}
+
+.form-input:focus {
+    border: 1px solid var(--secondary-accent-color);
+}
+
+/* <.........Textarea........> */
+
+.form-field textarea { 
+    width: 100%;
+    padding: 8px 16px;
+    margin: 0;
+    color: inherit;
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border var(--transition-dur-time);
+}
+
+.text-area-container textarea {
+    margin-bottom: 4px;
+}
+
+.input-area{
+    outline: transparent;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: inherit;
+}
+
+.input-area:focus {
+    border: 1px solid var(--secondary-accent-color);
+}
+
+/* <.........Checkbox........> */
+
+.checkbox-place {
+    display: flex;
+    margin: 16px 0 24px 0;
+    align-items: center;
+}
+
+.checkbox-input{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    appearance: none;
+}
+
+.check-box {
+    display: block;
+    align-items: center;
+    
+    height: 16px;
+    width: 16px;
+    position: absolute;
+
+    border: 1px solid #8E8F99;
+    border-radius: 2px;
+
+    transition: border var(--transition-dur-time), fill var(--transition-dur-time), background-color var(--transition-dur-time);
+}
+
+.checkbox-input:checked+ .check-box {
+    background-color: var(--accent-color);
+    background-image: url("../images/click.svg");
+    border: transparent;
+}
+
+.policy-first-part {
+    padding-left: 16px;
+    margin-left: 8px;
+    color:#8E8F99;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.policy-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: var(--secondary-accent-color);
+}
+
+/* <.........Form submit button........> */
+
+.form-send-button {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin:0 auto;
+    min-width: 169px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--pimary-white-color);
+    background-color: var(--secondary-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+
+    transition: background-color var(--transition-dur-time);
+}
+
+.form-send-button:hover,
+.form-send-button:focus {
+   background-color: var(--accent-color);
+}
+
+/* ...........Subscribe place...... */
+
+.footer-subsciprion {
+    display: flex;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    gap: 24px;
+    padding: 0;
+    margin-left: 80px;
+}
+
+.subscribe-label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+    color: var(--pimary-white-color);
+}
+
+.subscribe-input {
+    padding: 8px 16px;;
+    margin-top: 16px;
+    height: 40px;
+    width: 264px;
+    
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: inherit;
+
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    transition: border var(--transition-dur-time);
+}
+
+.subscribe-input:focus {
+    border: 1px solid var(--secondary-accent-color);}
+
+.subscribe-button { 
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+    margin-left: auto;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--pimary-white-color);
+
+    background-color: var(--secondary-accent-color);
+    cursor: pointer; 
+    border: transparent;
+    border-radius: 4px;
+
+    transition: background-color var(--transition-dur-time);
+}
+
+.sibscribe-icon {
+    margin-left: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+   background-color: var(--accent-color);
+}
+
