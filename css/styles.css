@@ -890,6 +890,7 @@ transform: translateY(0);
     position: absolute;
     display: block;
     align-items: center;
+    justify-content: center;
     
     height: 16px;
     width: 16px;
