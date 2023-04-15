@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -375,10 +377,13 @@
                         </li>
                     </ul>
             </div>
+
             <div class="footer-subsciprion">
                 <form class="subscription-form">
+                    <span class="subscribe-section">
                     <label class="subscribe-label">Subscribe
                         <input class="subscribe-input" name="subscribe" required type="email" placeholder="E-mail"/></label>
+                    </span>
                     <button class="subscribe-button" type="submit">Subscribe
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/symbol-defs-2.svg#icon-icon-send"></use>
@@ -386,6 +391,7 @@
                     </button>
                 </form>
             </div>
+            
         </div>
     </footer>
 
@@ -429,7 +435,7 @@
                     </span>
                 </div>
 
-                <div class="form-field ">
+                <div class="form-field">
                     <label class="comment-field label">Comment</label>
                     <textarea class="input-area" name="text_input" rows="7" placeholder="Text input"></textarea>
                 </div>
