@@ -236,7 +236,7 @@ button {
 } */
 /* Site info */
 
-.site-info {
+/* .site-info {
     padding: 120px 0;
 }
 .info-list {
@@ -252,7 +252,7 @@ button {
 
 .info-list .symbol+.symbol {
     margin-left: 24px;
-}
+} */
 
 
 /* .symbol::before {
@@ -331,7 +331,7 @@ button {
 } */
 
 /* Our team */
-.members {
+/* .members {
     padding-top: 120px; 
     padding-bottom: 120px;
     background: var(--secondary-white-color);
@@ -388,21 +388,21 @@ button {
     color: var(--primary-text-color);
 }
 
-/* .network-list {
+.network-list {
     display: flex;
     padding: 0;
     justify-content: center;
     gap: 24px;
-} */
+}
 
-/* .network-item {
+.network-item {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--secondary-accent-color);
-} */
+}
 
-/* .network-link{
+.network-link{
     display: flex;
     width: 100%;
     height: 100%;
@@ -475,7 +475,7 @@ button {
 
 /*!.......... FOOTER ........!*/
 
-.footer {
+/* .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--title-text-color);
@@ -557,10 +557,10 @@ button {
 .network-link-footer:hover,
 .network-link-footer:focus {
     background-color: #31D0AA;
-}
+} */
 
 /* ............Portfolio........ */
-.services-title {
+/* .services-title {
     margin-bottom: 72px;
     text-align: center;
     font-weight: 700;
@@ -569,9 +569,9 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-text-color);
-}
+} */
 
-.service-title {
+/* .service-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -586,10 +586,10 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-}
+} */
 
 /* ........Buttons...... */
-
+/* 
 .service-btn { 
     padding: 12px 24px;
 
@@ -628,10 +628,10 @@ button {
     gap: 24px;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* .......List of the services..... */
-.services-info {
+/* .services-info {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -655,8 +655,8 @@ button {
 
 .item-service:nth-last-child(-n + 3) {
     margin-bottom: 0;
-}
-
+} */
+/* 
 .service-description {
     padding: 32px 0px 32px 16px;
     border-left: 1px solid var(--buttons-color);
@@ -672,10 +672,10 @@ button {
 .service-link:hover,
 .service-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
-
-.service-photo-wrapper {
+/* OVERLAY */
+/* .service-photo-wrapper {
     position: relative;
     overflow: hidden;
 }
@@ -702,9 +702,9 @@ button {
 .service-link:hover .overlay-text,
 .service-link:focus .overlay-text {
 transform: translateY(0);
-}
+} */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     width: 100%;
@@ -761,7 +761,7 @@ transform: translateY(0);
     border: 1px solid transparent;
     fill: var(--pimary-white-color);
     background-color: var(--accent-color);
-}
+} */
 
 /* <.........Name, Phone, Email........>
 
@@ -847,7 +847,7 @@ transform: translateY(0);
 }
 
 /* <.........Textarea........> */
-
+/* 
 .form-field textarea { 
     width: 100%;
     padding: 8px 16px;
@@ -876,10 +876,10 @@ transform: translateY(0);
 
 .input-area:focus {
     border: 1px solid var(--secondary-accent-color);
-}
+} */
 
 /* <.........Checkbox........> */
-
+/* 
 .checkbox-place {
     display: flex;
     margin: 16px 0 24px 0;
@@ -944,10 +944,10 @@ transform: translateY(0);
     letter-spacing: 0.04em;
     text-decoration-line: underline;
     color: var(--secondary-accent-color);
-}
+} */
 
 /* <.........Form submit button........> */
-
+/* 
 .form-send-button {
     display: block;
     border: 1px solid transparent;
@@ -972,11 +972,11 @@ transform: translateY(0);
 .form-send-button:hover,
 .form-send-button:focus {
    background-color: var(--accent-color);
-}
+} */
 
 /* ...........Subscribe place...... */
 
-.footer-subsciprion {
+/* .footer-subsciprion {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
@@ -1056,5 +1056,5 @@ transform: translateY(0);
 .subscribe-button:hover,
 .subscribe-button:focus {
    background-color: var(--accent-color);
-}
+} */
 
