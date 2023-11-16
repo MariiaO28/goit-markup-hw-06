@@ -656,7 +656,7 @@ button {
 .item-service:nth-last-child(-n + 3) {
     margin-bottom: 0;
 } */
-/* 
+
 .service-description {
     padding: 32px 0px 32px 16px;
     border-left: 1px solid var(--buttons-color);
@@ -672,10 +672,10 @@ button {
 .service-link:hover,
 .service-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 
 /* OVERLAY */
-/* .service-photo-wrapper {
+.service-photo-wrapper {
     position: relative;
     overflow: hidden;
 }
@@ -702,7 +702,7 @@ button {
 .service-link:hover .overlay-text,
 .service-link:focus .overlay-text {
 transform: translateY(0);
-} */
+}
 
 /* .backdrop {
     position: fixed;

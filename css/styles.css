@@ -31,6 +31,7 @@ p {
     margin: 0;
 }
 
+
 img {
     display: block;
     max-width: 100%;
@@ -304,10 +305,24 @@ button {
 }
 
 .service-description {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
+    border-top: none;
+    border-left: 1px solid var(--buttons-color);
+    border-right: 1px solid var(--buttons-color);
+    border-bottom: 1px solid var(--buttons-color);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+.service-link {
+    display: block;
+    transition: box-shadow var(--transition-dur-time);
+}
+
+.service-link:hover,
+.service-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} 
+
 
 .service-title {
     margin-bottom: 8px;
@@ -324,16 +339,6 @@ button {
     color: var(--primary-text-color);
 }
 
-.item-service {
-    display: block;
-    box-shadow: 0px 1px 6px 0px #2E2F4214;
-    transition: box-shadow var(--transition-dur-time);
-}  
-
-.item-service:hover,
-.item-service:focus {
-    box-shadow: 0px 2px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 1px 6px 0px #2E2F4214;
-}
 
 /*...............OVERLAY.................. */
 .service-photo-wrapper {
@@ -350,13 +355,13 @@ button {
     padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
-
+    
     line-height: 1.5;
     color: var(--secondary-white-color);
     background-color: var(--secondary-accent-color);
     letter-spacing: 0.02em;
 
-    transform:  translatey(100%);
+    transform:  translateY(100%);
     transition: transform var(--transition-dur-time);
 }
 
@@ -364,8 +369,6 @@ button {
 .service-link:focus .overlay-text {
 transform: translateY(0);
 }
-
-
 /*...............FOOTER.................. */
 .footer {
     padding-top: 96px;
@@ -378,13 +381,16 @@ transform: translateY(0);
     flex-direction: column;
     align-items: center;
     gap: 72px;
+}
 
+.footer-logo {
+    display: block;
+    text-align: center;
 }
 
 .footer-logo,
 .footer-studio {
     font-family: 'Raleway', sans-serif;
-    text-align: center;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -398,26 +404,32 @@ transform: translateY(0);
 }
 
 .footer-text {
-    width: 268px;
+    width: 288px;
     margin-top: 16px;
     color: var(--buttons-color);
     line-height: 1.5;
-    padding-bottom: 72px;
+}
+
+.networks-name {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--pimary-white-color);
 }
 
 .network-list-footer {
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     gap: 16px;
-    padding: 0;
-    margin: 0;
 }
 
 .network-item-footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-accent-color);
 }
 
 .network-link-footer {
@@ -436,38 +448,28 @@ transform: translateY(0);
     background-color: #31D0AA;
 }
 
-.footer-subsciprion {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-}
-
 .subscription-form {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    
-    gap: 24px;
-    padding: 0;
 }
 
-.subscribe-label{
+.subscribe-label  {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
-
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--pimary-white-color);
 }
 
 .subscribe-input {
-    padding: 8px 16px;;
+    padding: 8px 16px;
     margin-top: 16px;
     height: 40px;
     width: 100%;
     
     font-size: 12px;
-    line-height: 2;
+    line-height: 2em;
     letter-spacing: 0.04em;
     color: inherit;
 
@@ -489,8 +491,7 @@ transform: translateY(0);
     align-items: center;
     justify-content: center;
 
-    margin-top: 40px;
-    margin-left: auto;
+    margin-top: 16px;
     width: 165px;
     height: 40px;
     padding: 8px 24px;
@@ -518,7 +519,7 @@ transform: translateY(0);
    background-color: var(--accent-color);
 }
 /*...............MODAL.................. */
-/* .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     width: 100%;
@@ -550,6 +551,13 @@ transform: translateY(0);
     box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%), 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
+@media screen and (max-width: 400px) {
+     .modal {
+        width: 288px;
+        height: 623px;
+    }
+}
+
 .backdrop.is-hidden .modal {
      transform: translate(-50%, -50%) scaleY(0);
 }
@@ -575,8 +583,8 @@ transform: translateY(0);
     border: 1px solid transparent;
     fill: var(--pimary-white-color);
     background-color: var(--accent-color);
-} */
-/* <.........Name, Phone, Email........>
+}
+ /* <.........Name, Phone, Email........> */
 
 .form-field {
     display: flex;
@@ -605,10 +613,6 @@ transform: translateY(0);
     transition: border var(--transition-dur-time);
 }
 
-.form-field .label {
-    margin-bottom: 4px;   
-}
-
 .form-name {
     margin-top: 24px;
     margin-bottom: 16px;
@@ -629,6 +633,7 @@ transform: translateY(0);
 }
 
 .form-input {
+    margin-top: 4px;
     font-size: 12px;
     line-height: 1.67;
     outline: transparent;
@@ -661,7 +666,7 @@ transform: translateY(0);
 
 /* <.........Textarea........> */
 
-/* .form-field textarea { 
+.form-field textarea { 
     width: 100%;
     padding: 8px 16px;
 
@@ -674,11 +679,6 @@ transform: translateY(0);
     transition: border var(--transition-dur-time);
 }
 
-
-.text-area-container textarea {
-    margin-bottom: 4px;
-}
-
 .input-area{
     outline: transparent;
     font-size: 12px;
@@ -687,13 +687,9 @@ transform: translateY(0);
     color: inherit;
 }
 
-.input-area:focus {
-    border: 1px solid var(--secondary-accent-color);
-} */
-
 /* <.........Checkbox........> */
 
-/* .checkbox-place {
+.checkbox-place {
     display: flex;
     margin: 16px 0 24px 0;
     align-items: center;
@@ -731,7 +727,6 @@ transform: translateY(0);
     fill: currentColor;
 }
 
-
 .checkbox-input:checked+ .check-box {
     background-color: var(--accent-color);
     border: transparent;
@@ -748,6 +743,7 @@ transform: translateY(0);
     letter-spacing: 0.04em;
 }
 
+
 .policy-link {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -757,15 +753,15 @@ transform: translateY(0);
     letter-spacing: 0.04em;
     text-decoration-line: underline;
     color: var(--secondary-accent-color);
-} */
+}
 /* <.........Form submit button........> */
 
-/* .form-send-button {
+.form-send-button {
     display: block;
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 16px 32px;
-    margin: auto;
+    margin: 24px auto;
     min-width: 169px;
 
     font-family: 'Roboto', sans-serif;
@@ -784,7 +780,8 @@ transform: translateY(0);
 .form-send-button:hover,
 .form-send-button:focus {
    background-color: var(--accent-color);
-} */
+   cursor: pointer
+}
 
 /*...............MOBILE START.................. */
 @media screen and (max-width: 767px) {
@@ -1198,17 +1195,9 @@ transform: translateY(0);
 
 .service-description {
     box-shadow: none;
-    border-top: none;
-    border-bottom: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    transition: box-shadow var(--transition-dur-time);
+
 }  
 
-.item-service:hover,
-.item-service:focus {
-    box-shadow: 0px 2px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 1px 6px 0px #2E2F4214;
-}
 /*...............DESKTOP FOOTER.................. */
 }
 /*...............DESKTOP END.................. */
