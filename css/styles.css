@@ -448,76 +448,95 @@ transform: translateY(0);
     background-color: #31D0AA;
 }
 
-.subscription-form {
+/* .............SUBSCRIBTION PART.......... */
+
+.subscribe-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.subscribe-label  {
+.sub-list {
+    margin-bottom: 16px;
+    text-align: center;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--pimary-white-color);
 }
 
-.subscribe-input {
-    padding: 8px 16px;
-    margin-top: 16px;
-    height: 40px;
-    width: 100%;
-    
-    font-size: 12px;
-    line-height: 2em;
-    letter-spacing: 0.04em;
-    color: inherit;
-
-    background-color: transparent;
-    outline: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    transition: border var(--transition-dur-time);
-}
-
-.subscribe-input:focus {
-    border: 1px solid var(--secondary-accent-color);}
-
-.subscribe-button { 
+.form-elements {
     display: flex;
-
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-
-    margin-top: 16px;
-    width: 165px;
-    height: 40px;
-    padding: 8px 24px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-
-    color: var(--pimary-white-color);
-
-    background-color: var(--secondary-accent-color);
-    border: transparent;
-    border-radius: 4px;
-
-    transition: background-color var(--transition-dur-time);
+    align-items: center;
+    gap: 16px;
 }
 
-.subscribe-icon {
-    margin-left: 16px;
+.form-button-container {
+    position: relative;
+}
+
+.form-subscribe {
+    position: relative;
+}
+
+.subscribe-button {
+    padding: 8px 64px 8px 24px;
+    height: 40px;
+    letter-spacing: 0.04em;
+    color: var(--pimary-white-color);
+    background-color: var(--secondary-accent-color);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: background-color var(--transition-dur-time);;
+}
+
+.form-button-container .icon {
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    pointer-events: none;
+    fill: var(--pimary-white-color);
 }
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-   background-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
+
+.form-subscribe .mail {
+    color: var(--pimary-white-color);
+    transition: border var(--transition-dur-time);
+}
+
+.form-subscribe .mail::placeholder {
+    color: var(--pimary-white-color);
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.form-subscribe .mail {
+    padding: 8px 16px;
+    height: 40px;
+    width: 100%;
+    color: var(--pimary-white-color);
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+ .form-subscribe .mail:focus{
+    border: 1px solid var(--secondary-accent-color);
+}
+
 /*...............MODAL.................. */
 .backdrop {
     position: fixed;
@@ -551,9 +570,9 @@ transform: translateY(0);
     box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%), 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
      .modal {
-        width: 288px;
+        width: 320px;
         height: 623px;
     }
 }
@@ -743,7 +762,6 @@ transform: translateY(0);
     letter-spacing: 0.04em;
 }
 
-
 .policy-link {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -883,7 +901,7 @@ transform: translateY(0);
 
 .address.link:hover ,
 .address.link:focus {
-    color: #4D5AE5;
+    color: var(--secondary-accent-color);
 }
 
 .menu-networks-list {
@@ -1083,9 +1101,37 @@ transform: translateY(0);
     flex-basis: calc((100% - 24px) / 2);
   }
 /*...............TABLET FOOTER.................. */
-/*...............TABLET END.................. */
 
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 24px;
+    column-gap: 72px;
+ }
+
+/* .form-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+} */
+
+.div-footer-logo {
+    display: block;
+    padding-right: 24px;
 }
+
+.footer-logo {
+    text-align: start;
+}
+
+.networks-name {
+text-align: start;
+}
+}
+
+/*...............TABLET END.................. */
 
 /*...............DESKTOP START.................. */
 @media screen and (min-width: 1158px) {
@@ -1113,7 +1159,6 @@ transform: translateY(0);
 
     transition: color var(--transition-dur-time);
 }
-
 
 /*...............DESKTOP HERO.................. */
 
@@ -1195,13 +1240,11 @@ transform: translateY(0);
 
 .service-description {
     box-shadow: none;
-
 }  
 
 /*...............DESKTOP FOOTER.................. */
 }
 /*...............DESKTOP END.................. */
-
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
