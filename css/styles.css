@@ -1295,7 +1295,7 @@ transform: translateY(0);
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .hero-part {
+    .hero {
         background-image:linear-gradient(to right,
     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('/images/people-office-mobile@2x.jpg');
@@ -1305,7 +1305,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .hero-part {
+    .hero {
         background-image:linear-gradient(to right,
     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('/images/people-office-tablet@2x.jpg');
@@ -1315,7 +1315,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
 screen and (min-resolution: 2dppx) and (min-width: 1158px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-    .hero-part {
+    .hero {
         background-image: linear-gradient(to right,
     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('/images/people-office@2x.jpg');
